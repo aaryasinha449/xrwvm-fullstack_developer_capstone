@@ -4,112 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Best Cars Dealership</title>
+    <title>About Us | Best Cars Dealership</title>
 
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #273449;
+            line-height: 1.7;
+        }
+
+        .about-header {
+            background: linear-gradient(135deg, #102a43, #2471a3);
+            color: white;
+            padding: 55px 25px;
+            border-radius: 12px;
+            margin-bottom: 45px;
+        }
+
+        .about-header h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .about-header p {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            color: #123b5d;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            width: 100%;
+            max-height: 360px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 18px;
+            height: 100%;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+            transition: transform 0.2s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-photo {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #e4edf5;
+            margin-bottom: 18px;
+        }
+
+        .team-card h3 {
+            font-size: 1.3rem;
+            color: #123b5d;
+            font-weight: 700;
+        }
+
+        .team-role {
+            color: #2471a3;
+            font-weight: 600;
+        }
+
+        .team-card a {
+            color: #1769aa;
+            overflow-wrap: anywhere;
+        }
+
+        .values-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 45px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            margin-top: 55px;
+        }
+
+        @media (max-width: 768px) {
+            .about-header {
+                padding: 35px 18px;
+            }
+
+            .about-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <div class="container my-5">
+    <main class="container my-5">
 
-        <div class="about-header text-center mb-5">
+        <!-- About Us Introduction -->
+        <section class="about-header text-center">
             <h1>About Us</h1>
             <p>
                 Welcome to Best Cars dealership, home to the best cars in North America.
                 We deal in selling domestic and imported cars at reasonable prices.
             </p>
-        </div>
+        </section>
 
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <h2>Who We Are</h2>
+        <!-- Dealership Information -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4">
+                <h2 class="section-title">Who We Are</h2>
                 <p>
-                    Best Cars helps customers find reliable domestic and imported
-                    vehicles at competitive prices.
+                    At Best Cars Dealership, we believe finding your next car should
+                    be simple, transparent, and enjoyable. We help customers explore
+                    a wide selection of domestic and imported vehicles to suit
+                    different lifestyles and budgets.
                 </p>
                 <p>
-                    Our team is committed to honest advice, transparent pricing,
-                    and excellent customer service throughout the car-buying journey.
+                    Our team is committed to providing helpful guidance, clear
+                    information, and dependable customer service at every step
+                    of the car-buying journey.
                 </p>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4">
                 <img
-                    src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80"
-                    alt="Car on the road"
-                    class="img-fluid rounded">
+                    src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=80"
+                    alt="Car on an open road"
+                    class="about-image">
             </div>
-        </div>
+        </section>
 
-        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <!-- Team Members -->
+        <section>
+            <h2 class="section-title text-center mb-4">Meet Our Team</h2>
 
-        <div class="row text-center">
+            <div class="row">
 
-            <div class="col-md-4 mb-4">
-                <img
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                    alt="Alex Morgan"
-                    width="130"
-                    height="130"
-                    class="rounded-circle mb-3">
-                <h3>Alex Morgan</h3>
-                <h5>Sales Manager</h5>
-                <p>
-                    Helps customers choose vehicles that suit their needs and budgets.
-                </p>
-                <p>
-                    <a href="mailto:alex.morgan@example.com">
-                        alex.morgan@example.com
-                    </a>
-                </p>
+                <div class="col-md-4 mb-4">
+                    <article class="team-card text-center">
+                        <img
+                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            alt="Alex Morgan"
+                            class="team-photo">
+
+                        <h3>Alex Morgan</h3>
+                        <p class="team-role">Sales Manager</p>
+                        <p>
+                            Alex helps customers compare vehicles, understand their
+                            options, and find cars that fit their needs and budgets.
+                        </p>
+                        <a href="mailto:alex.morgan@example.com">
+                            alex.morgan@example.com
+                        </a>
+                    </article>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <article class="team-card text-center">
+                        <img
+                            src="https://randomuser.me/api/portraits/women/44.jpg"
+                            alt="Jordan Lee"
+                            class="team-photo">
+
+                        <h3>Jordan Lee</h3>
+                        <p class="team-role">Customer Relations Specialist</p>
+                        <p>
+                            Jordan assists customers with enquiries and helps ensure
+                            a smooth, welcoming dealership experience.
+                        </p>
+                        <a href="mailto:jordan.lee@example.com">
+                            jordan.lee@example.com
+                        </a>
+                    </article>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <article class="team-card text-center">
+                        <img
+                            src="https://randomuser.me/api/portraits/men/75.jpg"
+                            alt="Taylor Brooks"
+                            class="team-photo">
+
+                        <h3>Taylor Brooks</h3>
+                        <p class="team-role">Vehicle Consultant</p>
+                        <p>
+                            Taylor explains vehicle features and helps customers
+                            make informed decisions when comparing available models.
+                        </p>
+                        <a href="mailto:taylor.brooks@example.com">
+                            taylor.brooks@example.com
+                        </a>
+                    </article>
+                </div>
+
             </div>
+        </section>
 
-            <div class="col-md-4 mb-4">
-                <img
-                    src="https://randomuser.me/api/portraits/women/44.jpg"
-                    alt="Jordan Lee"
-                    width="130"
-                    height="130"
-                    class="rounded-circle mb-3">
-                <h3>Jordan Lee</h3>
-                <h5>Customer Relations Specialist</h5>
-                <p>
-                    Answers customer questions and assists with dealership services.
-                </p>
-                <p>
-                    <a href="mailto:jordan.lee@example.com">
-                        jordan.lee@example.com
-                    </a>
-                </p>
+        <!-- Our Values -->
+        <section class="values-section text-center">
+            <h2 class="section-title">Our Commitment to You</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h4>Transparency</h4>
+                    <p>Clear information to help customers make informed decisions.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h4>Quality</h4>
+                    <p>A customer-focused approach to exploring vehicle options.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h4>Customer Care</h4>
+                    <p>Friendly assistance throughout the dealership experience.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="col-md-4 mb-4">
-                <img
-                    src="https://randomuser.me/api/portraits/men/75.jpg"
-                    alt="Taylor Brooks"
-                    width="130"
-                    height="130"
-                    class="rounded-circle mb-3">
-                <h3>Taylor Brooks</h3>
-                <h5>Vehicle Consultant</h5>
-                <p>
-                    Explains vehicle features and helps customers compare available models.
-                </p>
-                <p>
-                    <a href="mailto:taylor.brooks@example.com">
-                        taylor.brooks@example.com
-                    </a>
-                </p>
-            </div>
-
-        </div>
-    </div>
+    </main>
 
     <footer class="text-center p-3">
-        <p>&copy; 2026 Best Cars Dealership. All rights reserved.</p>
+        <p class="mb-0">
+            &copy; 2026 Best Cars Dealership. All rights reserved.
+        </p>
     </footer>
 
 </body>
 </html>
-
