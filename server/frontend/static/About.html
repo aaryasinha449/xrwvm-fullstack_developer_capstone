@@ -1,68 +1,115 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Cars Dealership</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+<body>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+    <div class="container my-5">
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <div class="about-header text-center mb-5">
+            <h1>About Us</h1>
+            <p>
+                Welcome to Best Cars dealership, home to the best cars in North America.
+                We deal in selling domestic and imported cars at reasonable prices.
+            </p>
         </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
 
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h2>Who We Are</h2>
+                <p>
+                    Best Cars helps customers find reliable domestic and imported
+                    vehicles at competitive prices.
+                </p>
+                <p>
+                    Our team is committed to honest advice, transparent pricing,
+                    and excellent customer service throughout the car-buying journey.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img
+                    src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80"
+                    alt="Car on the road"
+                    class="img-fluid rounded">
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4 mb-4">
+                <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Alex Morgan"
+                    width="130"
+                    height="130"
+                    class="rounded-circle mb-3">
+                <h3>Alex Morgan</h3>
+                <h5>Sales Manager</h5>
+                <p>
+                    Helps customers choose vehicles that suit their needs and budgets.
+                </p>
+                <p>
+                    <a href="mailto:alex.morgan@example.com">
+                        alex.morgan@example.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Jordan Lee"
+                    width="130"
+                    height="130"
+                    class="rounded-circle mb-3">
+                <h3>Jordan Lee</h3>
+                <h5>Customer Relations Specialist</h5>
+                <p>
+                    Answers customer questions and assists with dealership services.
+                </p>
+                <p>
+                    <a href="mailto:jordan.lee@example.com">
+                        jordan.lee@example.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img
+                    src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt="Taylor Brooks"
+                    width="130"
+                    height="130"
+                    class="rounded-circle mb-3">
+                <h3>Taylor Brooks</h3>
+                <h5>Vehicle Consultant</h5>
+                <p>
+                    Explains vehicle features and helps customers compare available models.
+                </p>
+                <p>
+                    <a href="mailto:taylor.brooks@example.com">
+                        taylor.brooks@example.com
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center p-3">
+        <p>&copy; 2026 Best Cars Dealership. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
+
